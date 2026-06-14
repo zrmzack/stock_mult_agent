@@ -9,6 +9,12 @@ api:
 logging:
   level: INFO
 
+database:
+  url: postgresql+psycopg://crypto_alpha:crypto_alpha_dev_password@localhost:5432/crypto_alpha
+
+redis:
+  url: redis://localhost:6379/0
+
 data_sources: {}
 scoring_weights: {}
 risk_thresholds: {}
