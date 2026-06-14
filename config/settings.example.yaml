@@ -1,0 +1,14 @@
+app:
+  name: Crypto Alpha Agent
+  version: 0.1.0
+  environment: development
+
+api:
+  v1_prefix: /api/v1
+
+logging:
+  level: INFO
+
+data_sources: {}
+scoring_weights: {}
+risk_thresholds: {}
