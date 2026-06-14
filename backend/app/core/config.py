@@ -9,6 +9,11 @@ class Settings(BaseSettings):
     environment: str = "development"
     api_v1_prefix: str = "/api/v1"
     log_level: str = "INFO"
+    database_url: str = (
+        "postgresql+psycopg://crypto_alpha:crypto_alpha_dev_password"
+        "@localhost:5432/crypto_alpha"
+    )
+    redis_url: str = "redis://localhost:6379/0"
 
     model_config = SettingsConfigDict(
         env_file=".env",
