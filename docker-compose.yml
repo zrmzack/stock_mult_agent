@@ -3,7 +3,7 @@ services:
     build:
       context: .
       dockerfile: Dockerfile
-    command: uvicorn backend.app.main:app --host 0.0.0.0 --port 8000 --reload
+    command: uvicorn backend.app.main:app --host 0.0.0.0 --port 8000 --reload --no-access-log
     environment:
       APP_NAME: ${APP_NAME:-Crypto Alpha Agent}
       APP_VERSION: ${APP_VERSION:-0.1.0}
